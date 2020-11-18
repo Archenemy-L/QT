@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestLayout</class>
+ <widget class="QWidget" name="TestLayout">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TestLayout</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>252</width>
+     <height>133</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="namelabel">
+        <property name="text">
+         <string>姓名：(&amp;N)</string>
+        </property>
+        <property name="buddy">
+         <cstring>namelE</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="agelabel">
+        <property name="text">
+         <string>年龄：(&amp;A)</string>
+        </property>
+        <property name="buddy">
+         <cstring>agelE</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="emilelabel">
+        <property name="text">
+         <string>邮箱：(&amp;E)</string>
+        </property>
+        <property name="buddy">
+         <cstring>emilelE</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>门牌号码：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>性别：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="namelE"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="agelE"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="emilelE"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_4"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="radioButton_2">
+          <property name="text">
+           <string>女</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton">
+          <property name="text">
+           <string>男</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
