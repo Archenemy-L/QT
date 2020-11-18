@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LoginDialog</string>
+  </property>
+  <widget class="QLabel" name="user">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>270</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>账号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="password">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>300</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>密码：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="accountEdit">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>270</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codeEdit">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>300</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginBtn">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>350</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登入</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cencelBtn">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>350</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imgLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>681</width>
+     <height>640</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="image.qrc">:/1.jpg</pixmap>
+   </property>
+  </widget>
+  <zorder>imgLabel</zorder>
+  <zorder>user</zorder>
+  <zorder>password</zorder>
+  <zorder>accountEdit</zorder>
+  <zorder>codeEdit</zorder>
+  <zorder>loginBtn</zorder>
+  <zorder>cencelBtn</zorder>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
