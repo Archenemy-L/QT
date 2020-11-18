@@ -1,0 +1,28 @@
+#include <QApplication>
+#include "stringlistmodel.h"
+#include <QListView>
+#include <QTableView>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc,argv);
+
+    QStringList list;
+    list << QString("太阳") << QString("月亮") << QString("地球") << QString("星星");
+
+    StringListModel model(list);    //创建模型
+
+    model.insertRows(3,2);  //插入
+    model.removeRows(3,2);  //删除
+
+    QListView listView;         //创建列表视图
+    listView.setModel(&model);  //视图设置模型
+    listView.show();            //视图显示
+
+    QTableView tableView;
+    tableView.setModel(&model);
+    tableView.show();
+
+
+    return app.exec();
+}
